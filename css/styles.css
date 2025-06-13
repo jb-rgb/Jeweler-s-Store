@@ -1,3 +1,72 @@
+:root {
+  --color-fondo-claro: #F9F7F3;
+  --color-fondo-destacado: #EAE7E2;
+  --color-texto-titulos: #FFD966;
+  --color-texto-parrafos: #4B4B4B;
+  --color-acento-oro: #BFA980;
+  --color-acento-verde: #7A9E9F;
+  --color-acento-rubi: #A4133C;
+}
+
+/* Aplicación general de fondo y texto */
+body {
+  background-color: var(--color-fondo-claro) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-acento-rubi) !important;
+}
+
+p {
+  color: var(--color-texto-parrafos) !important;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--color-acento-verde) !important;
+  color: #fff !important;
+}
+
+.card-product button:hover {
+  background-color: var(--color-acento-verde) !important;
+  color: white !important;
+}
+
+.footer-link:hover,
+.footer i:hover {
+  color: var(--color-acento-oro) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--color-acento-verde) !important;
+}
+
+.contacto .form-control:focus {
+  border-color: var(--color-acento-verde) !important;
+  box-shadow: 0 0 0 0.2rem rgba(122, 158, 159, 0.25) !important;
+}
+
+/* Botón principal */
+.btn-acento {
+  background-color: var(--color-acento-oro) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.btn-acento:hover {
+  background-color: var(--color-acento-verde) !important;
+  color: white !important;
+}
+
+/* Fondo destacado para secciones */
+.bg-destacado {
+  background-color: var(--color-fondo-destacado) !important;
+}
+
+/* Aplicaciones adicionales opcionales */
+.navbar.scrolled-navbar {
+  background-color: rgba(249, 247, 243, 0.95) !important;
+}
+
 * {
   font-family: "MuseoModerno", sans-serif !important;
 }
@@ -56,7 +125,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #4CAF50;
+  color: var(--color-acento-rubi);
 }
 
 .btn-outline-dark {
@@ -239,8 +308,8 @@ body {
 }
 
 .contacto .form-control:focus {
-  border-color: #4CAF50;
-  box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+  border-color: var(--color-acento-rubi);
+  box-shadow: 0 0 0 0.2rem rgba(175, 76, 76, 0.25);
 }
 
 .sobre-nosotros h2 {

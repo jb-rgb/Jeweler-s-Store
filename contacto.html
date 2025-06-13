@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto | Laminae</title>
+    <link rel="icon" href="img/IMG-20250612-WA0024.jpg" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-edu">
+
+    <!-- Navbar -->
+    <div class="d-flex flex-column min-vh-100">
+        <nav id="mainNavbar" class="navbar start-navbar position-fixed w-100 top-0">
+            <div class="container-fluid d-flex justify-content-between align-items-center navbar-inner">
+        
+                <!-- Columna izquierda: Logo -->
+                <div class="navbar-left animated-left">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/IMG-20250612-WA0024.jpg" alt="Logo" height="64" class="rounded-circle">
+                    </a>
+                </div>
+        
+                <!-- Columna centro: Enlaces -->
+                <ul class="navbar-nav flex-row gap-4 mb-0 justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="terminos.html">Términos y Condiciones</a></li>
+                </ul>
+        
+                <!-- Columna derecha: Botón -->
+                <div class="navbar-right animated-right">
+                    <a href="contacto.html" class="btn btn-outline-dark rounded-pill px-4">
+                        Contáctenos <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                    <!-- Botón al carrito -->
+                    <a href="carrito.html" class="btn btn-outline-dark rounded-pill px-4">
+                        <i class="bi bi-cart-fill"></i> Carrito
+                    </a>
+                </div>
+        
+            </div>
+        </nav>
+        
+        <section class="contacto py-5 mt-5">
+            <div class="container">
+                <h2 class="text-center text-success mb-5">Contáctanos</h2>
+        
+                <div class="row align-items-center gy-5">
+                    <!-- Información de contacto -->
+                    <div class="col-md-5">
+                        <div class="mb-4">
+                            <i class="bi bi-geo-alt-fill text-success fs-4 me-2"></i>
+                            <span>Huajuapan de León, Oaxaca.</span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-envelope-fill text-success fs-4 me-2"></i>
+                            <a href="mailto:contacto@savitsi.com">contacto@savitsi.com</a>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-telephone-fill text-success fs-4 me-2"></i>
+                            <span>+52 55 1234 5678</span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-clock-fill text-success fs-4 me-2"></i>
+                            <span>Lunes a Viernes, 9:00am – 6:00pm</span>
+                        </div>
+                    </div>
+        
+                    <!-- Formulario -->
+                    <div class="col-md-7">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="correo" placeholder="tucorreo@email.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="5"
+                                    placeholder="Escribe tu mensaje aquí..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success rounded-pill px-4">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+        
+                <!-- Mapa -->
+                <div class="mt-5">
+                    <h5 class="text-success mb-3">Encuéntranos en el mapa</h5>
+                    <div class="ratio ratio-16x9 rounded shadow">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3792.5081942607746!2d-97.7783652856836!3d17.80794728836356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c6db24b78de3c3%3A0x2a648f755e97bc9c!2sHuajuapan%20de%20Le%C3%B3n%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1718227611220!5m2!1ses-419!2smx"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer bg-black text-white py-4">
+            <div class="container text-center">
+                <p class="text-footer mb-3 small">© 2025 Laminae. Todos los derechos reservados.</p>
+        
+                <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 flex-wrap footer-nav">
+                    <!-- Enlaces -->
+                    <a href="index.html" class="footer-link">Inicio</a>
+                    <a href="productos.html" class="footer-link">Productos</a>
+                    <a href="terminos.html" class="footer-link">Términos y Condiciones</a>
+                    <a href="nosotros.html" class="footer-link">Sobre Nosotros</a>
+                    <a href="contacto.html" class="footer-link">Contacto</a>
+        
+                    <!-- Separador -->
+                    <span class="vr d-none d-md-inline mx-3"></span>
+        
+                    <!-- Redes sociales -->
+                    <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+            const nombre = document.getElementById("nombre");
+            const correo = document.getElementById("correo");
+            const mensaje = document.getElementById("mensaje");
+
+            // Validación en tiempo real
+            const validarCampo = (input, tipo) => {
+                const valor = input.value.trim();
+                let valido = true;
+                if (tipo === "nombre") valido = valor.length >= 3;
+                if (tipo === "correo") valido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(valor);
+                if (tipo === "mensaje") valido = valor.length >= 10;
+
+                input.classList.toggle("is-invalid", !valido);
+                input.classList.toggle("is-valid", valido);
+                return valido;
+            };
+
+            nombre.addEventListener("input", () => validarCampo(nombre, "nombre"));
+            correo.addEventListener("input", () => validarCampo(correo, "correo"));
+            mensaje.addEventListener("input", () => validarCampo(mensaje, "mensaje"));
+
+            // Envío del formulario
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const nombreValido = validarCampo(nombre, "nombre");
+                const correoValido = validarCampo(correo, "correo");
+                const mensajeValido = validarCampo(mensaje, "mensaje");
+
+                if (nombreValido && correoValido && mensajeValido) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Mensaje enviado!',
+                        text: 'Tu mensaje fue recibido y será atendido lo más pronto posible.',
+                        confirmButtonText: 'Aceptar',
+                    });
+
+                    form.reset();
+                    nombre.classList.remove("is-valid");
+                    correo.classList.remove("is-valid");
+                    mensaje.classList.remove("is-valid");
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Campos incompletos',
+                        text: 'Por favor corrige los campos marcados antes de enviar.',
+                        confirmButtonText: 'Entendido',
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carrito | Laminae</title>
+    <link rel="icon" href="img/IMG-20250612-WA0024.jpg" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-edu">
+
+    <!-- Navbar -->
+    <nav id="mainNavbar" class="navbar start-navbar position-fixed w-100 top-0">
+        <div class="container-fluid d-flex justify-content-between align-items-center navbar-inner">
+
+            <div class="navbar-left animated-left">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/IMG-20250612-WA0024.jpg" alt="Logo" height="64" class="rounded-circle">
+                </a>
+            </div>
+
+            <ul class="navbar-nav flex-row gap-4 mb-0 justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="terminos.html">Términos y Condiciones</a></li>
+            </ul>
+
+            <div class="navbar-right animated-right">
+                <a href="contacto.html" class="btn btn-outline-dark rounded-pill px-4">
+                    Contáctenos <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+                <!-- Botón al carrito -->
+                <a href="carrito.html" class="btn btn-outline-dark rounded-pill px-4">
+                    <i class="bi bi-cart-fill"></i> Carrito
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h2 class="mb-4">Tu Carrito</h2>
+        <div id="carritoContenido"></div>
+        <p class="text-end mt-3 fw-bold">Total: <span id="carritoTotal">$0.00</span></p>
+        <div class="text-end mt-3">
+            <button class="btn btn-primary" onclick="abrirModalPago()">Proceder al pago</button>
+        </div>
+    </div>
+
+    <!-- Modal de Pago -->
+    <div class="modal fade" id="modalPago" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Finalizar compra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="metodoPago" class="form-label">Selecciona método de pago:</label>
+                        <select id="metodoPago" class="form-select">
+                            <option value="tarjeta">Tarjeta de débito/crédito</option>
+                            <option value="spei">Transferencia SPEI</option>
+                            <option value="oxxo">Oxxo</option>
+                            <option value="mercado_pago">Mercado Pago</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+    
+                    <div id="formularioPago"></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" onclick="procesarPago()">Pagar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-black text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="text-footer mb-3 small">© 2025 Laminae. Todos los derechos reservados.</p>
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 footer-nav">
+                <a href="index.html" class="footer-link">Inicio</a>
+                <a href="productos.html" class="footer-link">Productos</a>
+                <a href="terminos.html" class="footer-link">Términos y Condiciones</a>
+                <a href="nosotros.html" class="footer-link">Sobre Nosotros</a>
+                <a href="contacto.html" class="footer-link">Contacto</a>
+                <span class="vr d-none d-md-inline mx-3"></span>
+                <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+            mostrarCarrito();
+        });
+    </script>
+</body>
+
+</html>

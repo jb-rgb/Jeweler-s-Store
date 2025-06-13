@@ -332,7 +332,7 @@ body {
 }
 
 /* ============================
-   📱 RESPONSIVE TOTAL: SAVITSI
+   📱 RESPONSIVE TOTAL: LAMINAE
 ============================ */
 
 /* TABLETS (≤ 991.98px) */
@@ -418,6 +418,25 @@ body {
   p {
     font-size: 1rem;
   }
+
+  /* Botones en navbar alineados horizontalmente */
+  .navbar-right {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-right a {
+    font-size: 0.85rem !important;
+    padding: 0.3rem 0.8rem !important;
+    height: 36px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* CELULARES (≤ 767.98px) */
@@ -493,6 +512,24 @@ body {
     font-size: 0.95rem;
     line-height: 1.6;
   }
+
+  .navbar-right {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-right a {
+    font-size: 0.85rem !important;
+    padding: 0.3rem 0.8rem !important;
+    height: 36px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (max-width: 992px) {
@@ -502,14 +539,6 @@ body {
     display: none !important;
   }
 
-  /* Mostrar botón del carrito en móvil */
-  .navbar-right a[href="carrito.html"] {
-    display: inline-block !important;
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
-  }
-
   /* Estilo de navbar centrado */
   .navbar-nav {
     flex-direction: column;
@@ -547,54 +576,22 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  /* Ocultar logo y botón de contacto */
-  .navbar-left,
-  .navbar-right a[href="contacto.html"] {
-    display: none !important;
-  }
-
-  /* Mostrar botón del carrito en móvil */
-  .navbar-right a[href="carrito.html"] {
-    display: inline-block !important;
+@media (max-width: 325px) {
+  .navbar-right {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
     margin-top: 0.5rem;
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
   }
 
-  /* Estilo de navbar centrado */
-  .navbar-nav {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 0.4rem;
-    margin-top: 0.3rem;
-  }
-
-  .navbar-nav .nav-link {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 0.4rem 1rem;
-    font-weight: 500;
-    font-size: 0.9rem;
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar-nav .nav-link:hover {
-    background-color: #e0e0e0;
-  }
-
-  #mainNavbar {
-    background: white;
-    padding: 0.6rem 1rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-  }
-
-  .navbar-inner {
-    flex-direction: column;
+  .navbar-right a {
+    font-size: 0.85rem !important;
+    padding: 0.3rem 0.8rem !important;
+    height: 36px;
+    display: flex;
     align-items: center;
   }
 }

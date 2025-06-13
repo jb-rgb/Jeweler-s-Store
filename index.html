@@ -36,18 +36,62 @@
             </ul>
     
             <!-- Columna derecha: Botón -->
-            <div class="navbar-right animated-right">
+            <div class="navbar-right animated-right d-flex gap-2 align-items-center justify-content-center flex-wrap flex-md-nowrap">
+                <button type="button" class="btn btn-outline-dark rounded-pill px-4 btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="bi bi-person-circle me-2"></i> Iniciar sesión
+                </button>
                 <a href="contacto.html" class="btn btn-outline-dark rounded-pill px-4">
                     Contáctenos <i class="bi bi-arrow-right ms-2"></i>
                 </a>
                 <!-- Botón al carrito -->
-                <a href="carrito.html" class="btn btn-outline-dark rounded-pill px-4">
+                <a href="carrito.html" class="btn btn-outline-dark rounded-pill px-4 btn-carrito">
                     <i class="bi bi-cart-fill"></i> Carrito
                 </a>
             </div>
     
         </div>
     </nav>
+
+    <!-- Modal de Inicio de Sesión -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form id="loginForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="correoLogin" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correoLogin" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordLogin" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="passwordLogin" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-acento">Acceder</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast de confirmación -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100;">
+        <div id="loginToast" class="toast align-items-center text-white bg-success border-0" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    ¡Inicio de sesión exitoso!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Cerrar"></button>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section con imagen de fondo -->
     <header class="hero-section text-white d-flex align-items-center">
@@ -342,6 +386,42 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const email = document.getElementById('correoLogin').value.trim();
+                const password = document.getElementById('passwordLogin').value.trim();
+
+                // Expresión regular para validar correo
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (!email || !password) {
+                    alert("Por favor completa todos los campos.");
+                    return;
+                }
+
+                if (!emailRegex.test(email)) {
+                    alert("Por favor ingresa un correo electrónico válido.");
+                    return;
+                }
+
+                // Aquí podrías hacer una solicitud real de autenticación (AJAX o fetch)
+
+                // Oculta el modal
+                const modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+                modal.hide();
+
+                // Muestra el toast de éxito
+                const toastEl = document.getElementById('loginToast');
+                const toast = new bootstrap.Toast(toastEl);
+                toast.show();
+
+                // Limpia los campos
+                document.getElementById('correoLogin').value = '';
+                document.getElementById('passwordLogin').value = '';
+            });
+    </script>
 </body>
 
 </html>

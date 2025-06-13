@@ -104,176 +104,192 @@ window.onload = function () {
 };
 
 const productos = {
-  "jabon-azucar": {
-    nombre: "Jabón de Azúcar",
+  "aretes-oro-zafiro": {
+    nombre: "Aretes de Oro con Zafiro",
     descripcion:
-      "Hecho con azúcar morena, aceite esencial de limón, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 60,
+      "Estos aretes elaborados en oro de alta pureza enmarcan el profundo azul del zafiro natural, una piedra asociada con la sabiduría, la protección y la elegancia atemporal. Su diseño clásico con acabados artesanales resalta la intensidad del mineral, convirtiéndolos en una pieza versátil tanto para ocasiones especiales como para elevar tu estilo diario.",
+    precio: 25000,
     stock: 100,
-    imagen: "img/100gr jabón en barra azúcar y limón .jpg",
+    imagen: "img/ChatGPT Image 12 jun 2025, 04_07_50 p.m..png",
   },
-  "jabon-anis": {
-    nombre: "Jabón Anís Estrellado",
+  "aretes-platino-diamante": {
+    nombre: "Aretes de Platino con Diamantes",
     descripcion:
-      "Hecho con extracto de anís estrellado, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 55,
+      "Una joya que encarna la pureza y la sofisticación. Estos aretes están fabricados en platino —el metal más noble y duradero— y engastados con diamantes naturales de brillo excepcional. Su diseño minimalista y atemporal los convierte en una pieza imprescindible para quienes valoran la elegancia discreta y el lujo auténtico. Ideales para celebraciones inolvidables o como un regalo eterno.",
+    precio: 55000,
     stock: 80,
-    imagen: "img/Jabón anís estrellado_.jpg",
+    imagen: "img/ChatGPT Image 12 jun 2025, 04_08_02 p.m..png",
   },
-  "jabon-aloe-vera": {
-    nombre: "Jabón de Aloe Vera",
+  "aretes-plata-esmeralda": {
+    nombre: "Aretes de Oro con Esmeraldas y Diamantes",
     descripcion:
-      "Aloe vera, extracto de salvia, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 55,
+      "Inspirados en la frescura de la naturaleza, estos aretes de oro realzan el brillo intenso de las esmeraldas, símbolo de renovación y equilibrio. Su diseño delicado destaca la belleza orgánica de cada piedra, ofreciendo una combinación armoniosa entre lo artesanal y lo contemporáneo. Una pieza con carácter, perfecta para quienes buscan elegancia con un toque de color y significado.",
+    precio: 85000,
     stock: 200,
-    imagen: "img/Jabón barra 100 gr de alo vera_.jpg",
+    imagen: "img/ChatGPT Image 12 jun 2025, 04_08_04 p.m..png",
   },
-  "aceite-canela": {
-    nombre: "Aceite Esencia de Canela",
-    descripcion: "Hecho con extracto de canela.",
-    precio: 95,
+  "aretes-platino-esmeralda": {
+    nombre: "Aretes de Platino con Esmeraldas y Diamantes",
+    descripcion: "Una pieza que fusiona majestuosidad y delicadeza. Estos aretes están elaborados en platino puro, símbolo de fortaleza y distinción, y engastan con precisión esmeraldas de tono profundo junto a diamantes naturales que realzan su luz. La combinación de piedras preciosas crea un contraste armonioso entre la serenidad del verde y el resplandor del blanco, ideal para quienes buscan elegancia con una presencia inolvidable.",
+    precio: 95000,
     stock: 120,
-    imagen: "img/aceite escencia de canela.jpg",
+    imagen: "img/ChatGPT Image 12 jun 2025, 04_08_06 p.m..png",
   },
-  "aceite-eucalipto": {
-    nombre: "Aceite Esencia de Eucalipto",
-    descripcion: "Hecho con extracto de eucalipto.",
-    precio: 90,
+  "collar-oro-zafiro": {
+    nombre: "Collar de Oro con Zafiro y Diamantes",
+    descripcion: "Este collar combina la calidez del oro con la profundidad hipnótica del zafiro azul y el fulgor de diamantes naturales, creando una pieza de alto refinamiento. Cada detalle ha sido cuidadosamente trabajado para resaltar la piedra central, símbolo de sabiduría y realeza, enmarcada por destellos de luz que evocan elegancia atemporal. Ideal para marcar momentos inolvidables o como herencia con alma.",
+    precio: 35000,
     stock: 100,
-    imagen: "img/aceite escencial de eucalipto.jpg",
+    imagen: "img/ChatGPT Image 12 jun 2025, 04_17_47 p.m..png",
   },
-  "aceite-limon": {
-    nombre: "Aceite Esencia de Limón",
-    descripcion: "Hecho con extracto de limón.",
-    precio: 90,
+  "collar-platino-diamante": {
+    nombre: "Collar de Platino con Diamante",
+    descripcion: "Una declaración de elegancia en su forma más pura. Este collar, elaborado en platino —conocido por su resistencia y rareza—, sostiene un diamante central de excepcional claridad y brillo. Su diseño minimalista enaltece la piedra sin distracciones, haciendo de esta joya una elección perfecta para quienes valoran el lujo discreto, la atemporalidad y la perfección en los detalles.",
+    precio: 90000,
     stock: 180,
-    imagen: "img/aceite escencial de limon .jpg",
+    imagen: "img/ChatGPT Image 12 jun 2025, 04_17_51 p.m..png",
   },
-  "aceite-naranja": {
-    nombre: "Aceite Esencia de Naranja",
-    descripcion: "Hecho con extracto de naranja dulce.",
-    precio: 90,
+  "collar-oro-esmeralda": {
+    nombre: "Collar de Oro con Esmeralda y Diamantes",
+    descripcion: "Una joya que celebra la armonía entre la naturaleza y el lujo. Este collar está trabajado en oro de alta pureza y engastado con una esmeralda central de tono vibrante, símbolo de esperanza y renovación, acompañada por destellos de diamantes que realzan su esplendor. Su diseño equilibra lo clásico y lo contemporáneo, creando una pieza con carácter sereno y presencia luminosa.",
+    precio: 45000,
     stock: 150,
-    imagen: "img/aceite escencial de naranja  .jpg",
+    imagen: "img/ChatGPT Image 12 jun 2025, 04_19_27 p.m..png",
   },
-  "aceite-yerba-buena": {
-    nombre: "Aceite Esencia de Yerba Buena",
-    descripcion: "Hecho con extracto de yerba buena.",
-    precio: 90,
+  "collar-plata-rubi": {
+    nombre: "Collar de Plata con Rubí y Diamantes",
+    descripcion: "Este collar combina la nobleza de la plata con la intensidad del rubí y la sutileza de los diamantes, creando una joya cargada de pasión y sofisticación. El rubí, piedra del amor y la vitalidad, es el protagonista de esta pieza, realzado por el brillo delicado de diamantes que aportan equilibrio y luz. Perfecto para quien desea portar una joya con fuerza simbólica y belleza atemporal.",
+    precio: 65000,
     stock: 100,
-    imagen: "img/aceite escencial de yerba buena .jpg",
+    imagen: "img/ChatGPT Image 12 jun 2025, 04_20_59 p.m..png",
   },
-  "aceite-menta": {
-    nombre: "Aceite Esencia de Menta",
-    descripcion: "Hecho con extracto de menta piperita.",
-    precio: 90,
+  "anillo-oro-zafiro": {
+    nombre: "Anillo de Oro con Zafiro",
+    descripcion: "Un clásico renovado con carácter y profundidad. Este anillo, elaborado en oro de alta pureza, sostiene un zafiro natural de tono azul profundo, piedra asociada con la sabiduría, la lealtad y la introspección. Su diseño limpio y atemporal lo convierte en una pieza ideal para marcar compromisos, aniversarios o simplemente para llevar contigo un símbolo de fortaleza interior con un toque de lujo sutil.",
+    precio: 9000,
     stock: 80,
-    imagen: "img/menta piperita.jpg",
+    imagen: "img/Leonardo_Phoenix_10_A_highly_detailed_realistic_gold_ring_with_0.jpg",
   },
-  "mascarilla-coco": {
-    nombre: "Mascarilla (Coco y Piña)",
+  "anillo-oro-esmeralda": {
+    nombre: "Anillo de Oro con Esmeralda",
     descripcion:
-      "Hecho con aceite de coco, extracto de piña, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 120,
+      "Este anillo fusiona la calidez del oro con la energía vibrante de una esmeralda natural, creando una joya que transmite vida, equilibrio y autenticidad. La esmeralda, símbolo de amor sincero y renacimiento, es el centro de esta pieza diseñada para destacar con sutileza y elegancia. Ideal para quienes valoran lo natural, lo eterno y lo profundamente significativo en cada detalle.",
+    precio: 12000,
     stock: 250,
-    imagen: "img/Mascarillas cabello rizado y aceite de coco y piña_.jpg",
+    imagen: "img/Leonardo_Phoenix_10_Create_an_exquisite_emerald_gemstone_ring_2 (1).jpg",
   },
-  "pasta-dental": {
-    nombre: "Pasta Dental Yerba Buena (Cápsulas)",
-    descripcion: "Hecho con extracto de yerba buena, arcilla blanca.",
-    precio: 85,
+  "anillo-platino-amatista": {
+    nombre: "Anillo de Platino con Amatista y Diamantes",
+    descripcion: "Una joya que inspira serenidad y distinción. Este anillo, forjado en platino —símbolo de fuerza y pureza—, enmarca una amatista de profundo tono violeta, conocida por su energía espiritual y su elegancia natural. A su alrededor, diamantes finamente engastados aportan luz y contraste, haciendo de esta pieza una expresión armoniosa de sofisticación, calma y belleza interior.",
+    precio: 85000,
     stock: 300,
-    imagen: "img/Pasta detal yerba buena en cápsulas_.jpg",
+    imagen: "img/Leonardo_Phoenix_10_Render_a_highly_detailed_floralinspired_en_1.jpg",
   },
-  "shampoo-lavanda": {
-    nombre: "Shampoo de Lavanda",
+  "anillo-oro-rosa-esmeralda": {
+    nombre: "Anillo de Oro Rosa con Esmeralda",
     descripcion:
-      "Hecho con aceite esencial de lavanda, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 130,
+      "Delicadeza y carácter en perfecta sintonía. Este anillo está elaborado en oro rosa, cuya calidez aporta un toque romántico y moderno, y sostiene una esmeralda natural de intenso color verde, símbolo de renovación y amor verdadero. Su contraste de tonos crea una joya única, femenina y vibrante, ideal para celebrar momentos que merecen ser recordados con elegancia y alma.",
+    precio: 63000,
     stock: 200,
-    imagen: "img/Lavanda shampoo_.jpg",
+    imagen: "img/Leonardo_Phoenix_10_Render_an_elegant_engagement_ring_with_a_n_3.jpg",
   },
-  "shampoo-arroz": {
-    nombre: "Shampoo de Arroz",
+  "pulsera-oro-mariposa": {
+    nombre: "Pulsera de Oro con Forma de Mariposa",
     descripcion:
-      "Hecho con extracto de arroz orgánico, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 120,
+      "Una joya que evoca transformación y libertad. Esta pulsera, elaborada en oro de alta pureza, presenta un delicado diseño de mariposa que simboliza el renacer, la belleza y el movimiento constante de la vida. Su silueta sutil y elegante abraza la muñeca con ligereza, convirtiéndola en una pieza ideal para quienes celebran su evolución personal con estilo y significado.",
+    precio: 12000,
     stock: 180,
-    imagen: "img/Shampoo arroz_.jpg",
+    imagen: "img/Leonardo_Phoenix_10_Render_a_delicate_14k_yellow_gold_bracelet_0.jpg",
   },
-  "shampoo-cafe": {
-    nombre: "Shampoo de Café",
+  "pulsera-plata-figura": {
+    nombre: "Pulsera de Plata con Figuras",
     descripcion:
-      "Hecho con extracto de café, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 125,
+      "Una pieza que combina estilo y simbolismo en cada detalle. Esta pulsera de plata fina presenta un conjunto de figuras cuidadosamente trabajadas, que aportan dinamismo y personalidad al diseño. Ideal para quienes buscan una joya con carácter lúdico y elegante, capaz de adaptarse tanto a looks casuales como a momentos especiales con un toque único y auténtico.",
+    precio: 550,
     stock: 120,
-    imagen: "img/Shampoo café_.jpg",
+    imagen: "img/Leonardo_Phoenix_10_Render_a_feminine_charm_bracelet_in_sterli_2.jpg",
   },
-  "shampoo-clavo": {
-    nombre: "Shampoo de Clavo de Olor",
+  "pulsera-oro-piedra": {
+    nombre: "Pulsera de Oro con Piedras Preciosas",
     descripcion:
-      "Hecho con extracto de clavo de olor, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 125,
+      "Un recorrido de color, luz y significado. Esta pulsera, elaborada en oro de alta pureza, engasta una selección de piedras preciosas cuidadosamente elegidas por su belleza y simbolismo: rubí, zafiro, esmeralda y diamante se combinan en un diseño armonioso y atemporal. Cada gema aporta su propia energía, haciendo de esta joya una expresión de elegancia, fuerza y equilibrio para quien la porta.",
+    precio: 125000,
     stock: 100,
-    imagen: "img/Shampoo clavo de olor.jpg",
+    imagen: "img/Leonardo_Phoenix_10_Render_a_minimalist_gold_bracelet_with_a_h_0.jpg",
   },
-  "shampoo-aloe-vera": {
-    nombre: "Shampoo de Aloe Vera",
+  "pulsera-platino-flor": {
+    nombre: "Pulsera de Platino con Flores",
     descripcion:
-      "Hecho con aloe vera, aceite de oliva, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 120,
+      "Una joya inspirada en la delicadeza de la naturaleza. Esta pulsera, trabajada en platino —metal noble y duradero—, presenta un diseño floral que evoca frescura, feminidad y belleza en constante florecimiento. Cada flor ha sido esculpida con precisión artesanal, creando una pieza que combina gracia orgánica con elegancia contemporánea. Perfecta para quien busca un accesorio sutil, simbólico y eterno.",
+    precio: 12000,
     stock: 200,
-    imagen: "img/Shampoo de áloe vera_.jpg",
+    imagen: "img/Leonardo_Phoenix_10_Render_an_elegant_silver_bracelet_with_a_s_3.jpg",
   },
-  "shampoo-linaza": {
-    nombre: "Shampoo de Linaza",
+  "pulsera-platino": {
+    nombre: "Pulsera de Platino",
     descripcion:
-      "Hecho con linaza, canela, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 130,
+      "Una pieza de carácter firme y sofisticación discreta. Esta pulsera de platino ha sido diseñada para el hombre que valora la autenticidad y la solidez en cada detalle. Su acabado pulido y estructura minimalista reflejan una masculinidad contemporánea, sobria y atemporal. Ideal para acompañar el día a día con estilo o destacar en ocasiones especiales con un toque de distinción.oactivos suaves derivados del coco.",
+    precio: 13000,
     stock: 150,
-    imagen: "img/Shampoo de linaza_.jpg",
+    imagen: "img/ChatGPT Image 12 jun 2025, 04_23_59 p.m..png",
   },
-  "shampoo-hibiscus": {
-    nombre: "Shampoo de Hibiscus",
+  "pulsera-piel-plata": {
+    nombre: "Pulsera de Piel con Placa de Plata",
     descripcion:
-      "Hecho con flor de hibisco, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 125,
+      "Estilo urbano con esencia atemporal. Esta pulsera combina piel genuina de alta calidad con una placa de plata que aporta un toque refinado y personalizable. Su diseño sobrio y versátil la convierte en el accesorio ideal para el hombre que busca un complemento con carácter, perfecto para el día a día o como símbolo discreto de identidad y elegancia contemporánea.",
+    precio: 1250,
     stock: 100,
-    imagen: "img/Shampoo hibiscus_.jpg",
+    imagen: "img/ChatGPT Image 12 jun 2025, 04_59_36 p.m..png",
   },
-  "shampoo-jarilla": {
-    nombre: "Shampoo de Jarilla",
+  "pulsera-oro-esmeralda": {
+    nombre: "Pulsera de Oro con Esmeralda",
     descripcion:
-      "Hecho con extracto de jarilla mixteca, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 120,
+      "Una joya que combina fuerza y distinción. Esta pulsera, elaborada en oro sólido, incorpora una esmeralda natural como punto focal, aportando un contraste sutil entre la calidez del metal y la profundidad del verde. La esmeralda, símbolo de sabiduría y equilibrio, añade un significado personal a esta pieza masculina, ideal para quienes buscan elegancia con propósito y presencia con estilo.",
+    precio: 12000,
     stock: 80,
-    imagen: "img/SHAMPOO Jarilla mixteca_.jpg",
+    imagen: "img/ChatGPT Image 12 jun 2025, 05_00_28 p.m..png",
   },
-  "shampoo-miel": {
-    nombre: "Shampoo de Miel y Manzanilla",
+  "pulsera-piedra-volcanica": {
+    nombre: "Pulsera de Piedra Volcánica con Rubíes",
     descripcion:
-      "Hecho con miel de abeja, extracto de manzanilla, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 125,
+      "Energía ancestral y elegancia contemporánea. Esta pulsera está compuesta por cuentas de piedra volcánica, conocidas por su conexión con la tierra y su simbolismo de fortaleza interior, combinadas con rubíes naturales que aportan intensidad y vitalidad. El contraste entre lo orgánico y lo precioso crea una pieza única, ideal para el hombre que busca un accesorio con identidad, carácter y significado profundo.",
+    precio: 12500,
     stock: 200,
-    imagen: "img/Shampoo miel y manzanilla_.jpg",
+    imagen: "img/ChatGPT Image 12 jun 2025, 05_01_02 p.m..png",
   },
-  "shampoo-romero": {
-    nombre: "Shampoo de Romero",
+  "anillo-platino-topacio": {
+    nombre: "Anillo de Platino con Topacio",
     descripcion:
-      "Hecho con extracto de romero, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 125,
+      "Una pieza que refleja claridad, equilibrio y distinción. Este anillo está forjado en platino, símbolo de durabilidad y sofisticación, y engasta un topacio natural de tono cristalino o azul profundo, piedra asociada con la sabiduría, la comunicación y la confianza. Su diseño limpio y sólido lo convierte en un accesorio ideal para el hombre que valora los detalles con significado y la elegancia sin exceso.",
+    precio: 12500,
     stock: 150,
-    imagen: "img/Shampoo romero_.jpg",
+    imagen: "img/IMG-20250611-WA0095.jpg",
   },
-  "suero-cebolla": {
-    nombre: "Suero de Crecimiento Capilar (Cebolla)",
+  "anillo-platino-perla": {
+    nombre: "Anillo de Platino con Perla y Zafiros",
     descripcion:
-      "Hecho con cebolla, romero, jengibre, glicerina vegetal, aceites naturales, extractos botánicos, conservadores naturales (como vitamina E), tensioactivos suaves derivados del coco.",
-    precio: 140,
+      "Un anillo que desafía lo convencional con elegancia y carácter. Forjado en platino, este diseño combina la suavidad atemporal de una perla natural con la profundidad azul de zafiros engastados, creando un contraste audaz y refinado. La perla simboliza sabiduría interior y autenticidad, mientras los zafiros evocan claridad y fuerza. Una pieza para el hombre que aprecia la belleza con significado y estilo con propósito.",
+    precio: 14000,
     stock: 100,
     imagen:
-      "img/Suero de crecimiento capilar de cebolla, romero y gengibre_.jpg",
+      "img/IMG-20250611-WA0099.jpg",
   },
+  "anillo-platino-diamante": {
+    nombre: "Anillo de Platino con Diamante y Esmeraldas",
+    descripcion:
+     "Un anillo que encarna poder, elegancia y profundidad. Fabricado en platino —metal de nobleza y resistencia—, esta pieza destaca por su diamante central de brillo impecable, flanqueado por esmeraldas de intenso verde que aportan un aura de sabiduría, protección y distinción. Su diseño estructurado y atemporal lo convierte en un símbolo de carácter firme y gusto sofisticado. Ideal para quienes ven en la joyería una extensión de su esencia.",
+    precio: 64000,
+    stock: 145,
+    imagen: "img/IMG-20250611-WA0104.jpg"
+  },
+  "anillo-platino-turmalina": {
+    nombre: "Anillo de Platino con Turmalina y Rubíes",
+    descripcion:
+     "Audaz y magnético, este anillo de platino combina la energía vibrante de la turmalina con la intensidad del rubí. Cada piedra ha sido seleccionada por su simbolismo: la turmalina, ligada a la transformación personal y al equilibrio interior; el rubí, asociado con la pasión, la fuerza y la determinación. El contraste de colores sobre el fondo sobrio del platino crea una pieza moderna y poderosa, pensada para el hombre que porta su historia con orgullo y decisión.",
+    precio: 140000,
+    stock: 230,
+    imagen: "img/Leonardo_Phoenix_10_Render_a_bold_gothicstyle_engagement_ring_1.jpg"
+  }
 };
 
 // Restaurar stock si existe
